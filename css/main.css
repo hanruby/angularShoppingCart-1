@@ -1,0 +1,9 @@
+/* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* line 6, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+body {
+  background-color: black; }
