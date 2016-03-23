@@ -10,17 +10,21 @@ angular
         templateUrl: "templates/home.html",
         controller: "HomeController"
       })
-      .when('/productDetail',{
+      .when('/productDetail/:id',{
         templateUrl: "templates/productDetail.html",
-        controller: "DetailController"
+        controller: "HomeController"
       })
-      .when('/productListing',{
+      .when('/',{
         templateUrl: "templates/productListing.html",
-        controller: "ListingController"
+        controller: "HomeController"
       })
       .when('/shoppingCart',{
         templateUrl: "templates/shoppingCart.html",
         controller: "CartController"
+      })
+      .when('/404',{
+        templateUrl: "templates/404.html",
+        controller: "HomeController"
       })
       .otherwise({
          redirectTo: '/404'

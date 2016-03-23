@@ -1,0 +1,22 @@
+<div class="header">
+  <div class="logo"><h1>Fetsy</h1></div>
+  <div class="header-link"><a href="/#/">back Home</a></div>
+</div>
+<div class="col-sm-12">Total: {{subTotal | currency}}</div>
+<div class="col-sm-12"># of Items: ({{cartItems}})</div>
+<div class="col-md-12 col-sm-12 productWrap" ng-repeat="item in items">
+
+      <div class="title-wrap col-sm-9">
+        <a href="/#/productDetail/{{item.listing_id}}">
+        <h3>{{item.title}}</h3>
+        </a>
+        <div class="col-sm-6 price"><p>{{item.price | currency}}</p></div>
+        <div class="col-sm-6 add-to-cart">
+          <button type="button" name="button" class="btn btn-secondary btn-sm" ng-click="removeFromCart(item)">remove</button>
+        </div>
+      </div>
+      <div class="img-wrap col-sm-3">
+        <img class="img-fluid" alt="Responsive image" ng-src={{item.MainImage.url_75x75}}>
+      </div>
+
+</div>

@@ -4,5 +4,18 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: #efefef;
+}
+.header{
+  vertical-align:middle;
+}
+.logo {
+    width: 50%;
+    display: inline-block;
+}
+
+.header-link {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
 }

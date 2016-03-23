@@ -1,0 +1,20 @@
+<div class="header">
+  <div class="logo"><h1>Fetsy</h1></div>
+  <div class="header-link"><a href="/#/shoppingCart">view cart</a>({{cartItems}})</div>
+</div>
+<div class="col-md-12 col-sm-12 productWrap" ng-repeat="product in products">
+
+      <div class="title-wrap col-sm-9">
+        <a href="/#/productDetail/{{product.listing_id}}">
+        <h3>{{product.title}}</h3>
+        </a>
+        <div class="col-sm-6 price"><p>{{product.price | currency}}</p></div>
+        <div class="col-sm-6 add-to-cart">
+          <button type="button" name="button" class="btn btn-secondary btn-sm" ng-click="addToCart(product)">add to cart</button>
+        </div>
+      </div>
+      <div class="img-wrap col-sm-3">
+        <img class="img-fluid" alt="Responsive image" ng-src={{product.MainImage.url_75x75}}>
+      </div>
+
+</div>

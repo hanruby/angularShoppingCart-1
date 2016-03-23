@@ -6,4 +6,47 @@
 
 /* line 6, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
 body {
-  background-color: black; }
+  background-color: #efefef; }
+
+/* line 9, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+.header {
+  vertical-align: middle; }
+
+/* line 12, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+.logo {
+  width: 50%;
+  display: inline-block; }
+
+/* line 17, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+.header-link {
+  width: 49%;
+  display: inline-block;
+  text-align: right; }
+
+/* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.add-to-cart {
+  text-align: right; }
+
+/* line 4, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.img-detail-wrap {
+  height: 350px;
+  overflow: hidden; }
+
+/* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.productWrap {
+  margin: 3% 0;
+  padding: 3%;
+  background: white; }
+
+/* line 6, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.product {
+  background-color: white;
+  padding: 3% 5%; }
+
+/* line 10, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+img {
+  width: 100%; }
+
+/* line 13, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.img-wrap {
+  overflow: hidden; }
