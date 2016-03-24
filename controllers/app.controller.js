@@ -19,6 +19,12 @@ angular
         console.log("save",data)
       })
   }
+  // $scope.searchCtrl = function(val){
+  //   FetsyService.searchVal(val)
+  //     .then(function(data){
+  //       $scope.products = data.data.results;
+  //     })
+  // }
 })
 .controller('CartController', function($scope, TinyService, FetsyService, $route, $routeParams){
   TinyService.getTiny()

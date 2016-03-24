@@ -1,7 +1,29 @@
+.detail-wrap {
+  background: white;
+  padding: 2%;
+  margin-top: 2%;
+  border:1px solid #E1E3DF;
+  border-radius:3px;
+}
 .add-to-cart {
-    text-align: right;
+  text-align: right;
 }
 .img-detail-wrap{
-  height:350px;
   overflow:hidden;
+}
+.detail-description {
+  margin: 6% 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+.price, .add-to-cart {
+  margin: 5% 0;
+}
+.price h5{
+  font-size:1.5em;
+  font-weight:800;
+}
+.materials {
+  display: inline;
+  padding-right: 10px;
 }

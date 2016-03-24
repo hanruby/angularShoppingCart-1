@@ -5,7 +5,12 @@ angular
     var key = 'rb8lta6p18xdgyovpj1yckqq';
     var cors = 'https://free-cors-server.herokuapp.com/any-request/';
     var img = '&includes=MainImage';
+    var searchPrefix = '&keywords=';
     var url = encodeURIComponent('https://openapi.etsy.com/v2/listings/active?api_key=' + key + img);
+    // function searchVal(val){
+    //   return base + "?api_key=" + key + searchPrefix + val;
+    // }
+    // window.glob = searchVal();
 
    function getActiveListings() {
      return $http.get(cors + url);
@@ -15,6 +20,7 @@ angular
    }
     return {
       getActiveListings : getActiveListings,
-      getProduct : getProduct
+      getProduct : getProduct,
+      // searchVal : searchVal
     };
   })

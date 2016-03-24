@@ -1,18 +1,22 @@
-<div class="header col-sm-12">
+<div class="header">
   <div class="logo"><h1>Fetsy</h1></div>
-  <div class="header-link"><a href="/#/">back Home</a></div>
+  <div class="header-link"><a href="/#/shoppingCart"><i class="fa fa-shopping-cart"></i>
+</a> <a href="/#/"><i class="fa fa-home"></i>
+</a></div>
 </div>
-<div class="col-md-12"><h3>{{product.title}}</h3></div>
-<div class="col-md-4 col-sm-12">
-  <div class="img-detail-wrap">
-    <img ng-src={{product.MainImage.url_fullxfull}}>
+<div class="detail-wrap row">
+  <div class="col-md-6 col-sm-12">
+    <div class="img-detail-wrap">
+      <img ng-src={{product.MainImage.url_fullxfull}}>
+    </div>
   </div>
-</div>
-<div class="col-md-8 col-sm-12">
-  <div class="row">
-    <div class="col-md-6 col-sm-12"><h5>{{product.price | currency}}</h5></div>
-    <div class="col-md-6 col-sm-12 add-to-cart" ng-click="addToCart(product)"><button type="button" name="button" class="btn btn-secondary btn-sm">add to cart</button></div>
+  <div class="col-md-6 col-sm-12">
+    <div class="row">
+      <div class="detail-title col-sm-12"><h3>{{product.title}}</h3></div>
+      <div class="col-md-6 col-xs-6 price"><h5>{{product.price | currency}}</h5></div>
+      <div class="col-md-6 col-xs-6 add-to-cart" ng-click="addToCart(product)"><button type="button" name="button" class="btn btn-secondary btn-sm">add to cart</button></div>
+    </div>
+    <p class="detail-description">{{product.description}}</p>
+    <p ng-repeat="material in product.materials" class="materials">{{material}}</p>
   </div>
-  <p>Description:<br />{{product.description}}</p>
-  <p ng-repeat="material in product.materials">{{material}}</p>
 </div>

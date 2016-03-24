@@ -1,22 +1,23 @@
 <div class="header">
   <div class="logo"><h1>Fetsy</h1></div>
-  <div class="header-link"><a href="/#/shoppingCart">view cart</a>({{cartItems}})</div>
+  <div class="header-link"><a href="/#/shoppingCart"><i class="fa fa-shopping-cart"></i>
+</a></div>
 </div>
-<input type="text" placeholder="filter by name" ng-model="search">
-<input type="text" placeholder="filter by price" ng-model="search">
-<div class="col-md-12 col-sm-12 productWrap" ng-repeat="product in products | filter:search">
 
-      <div class="title-wrap col-sm-9">
-        <a href="/#/productDetail/{{product.listing_id}}">
-        <h3>{{product.title}}</h3>
-        </a>
-        <div class="col-sm-6 price"><p>{{product.price | currency}}</p></div>
-        <div class="col-sm-6 add-to-cart">
-          <button type="button" name="button" class="btn btn-secondary btn-sm" ng-click="addToCart(product)">add to cart</button>
-        </div>
-      </div>
-      <div class="img-wrap col-sm-3">
-        <img class="img-fluid" alt="Responsive image" ng-src={{product.MainImage.url_75x75}}>
-      </div>
+<input type="text" class="product-filter" placeholder="search products" ng-model="search">
+<!-- <button class='btn btn-lg btn-success' ng-click="searchCtrl(val)" name="button">search</button> -->
+<div class="col-md-12 col-sm-12 col-xs-12 product-wrap" ng-repeat="product in products | filter:search">
+  <div class="img-wrap col-sm-3 col-xs-12">
+    <img class="img-fluid" alt="Responsive image" ng-src={{product.MainImage.url_570xN}}>
+  </div>
+  <div class="title-wrap col-sm-9 col-xs-12">
+    <a href="/#/productDetail/{{product.listing_id}}">
+    <h3>{{product.title}}</h3>
+    </a>
+  </div>
+  <div class="options-wrap col-sm-9 col-xs-12">
+    <h5>{{product.price | currency}}</h5>
+      <button type="button" name="button" class="btn btn-secondary btn-sm" ng-click="addToCart(product)">add to cart</button>
+  </div>
 
 </div>

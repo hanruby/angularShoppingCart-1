@@ -1,52 +1,160 @@
-/* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+/* line 4, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* line 6, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
-body {
-  background-color: #efefef; }
-
 /* line 9, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
-.header {
-  vertical-align: middle; }
+body {
+  background-color: #f5f5f1;
+  font-family: 'Source Sans Pro', sans-serif; }
 
-/* line 12, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+/* line 13, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+.header {
+  margin-top: 1%;
+  border-bottom: 1px solid #E0E0D7;
+  padding: 2% 0; }
+
+/* line 18, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
 .logo {
   width: 50%;
-  display: inline-block; }
+  display: inline-block;
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+  color: #F56400; }
 
-/* line 17, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+/* line 25, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
 .header-link {
   width: 49%;
   display: inline-block;
-  text-align: right; }
+  text-align: right;
+  font-size: 18px; }
+  /* line 30, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+  .header-link a {
+    color: #0192B5;
+    padding: 3%;
+    transition: .2s all;
+    text-decoration: none; }
+    /* line 35, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+    .header-link a:hover {
+      color: #F56400;
+      background: rgba(0, 0, 0, 0.1); }
+
+/* line 41, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+button {
+  font-size: 1.25em !important;
+  border: 1px solid #E8E8E0 !important;
+  background: white;
+  color: gray;
+  transition: .2s all; }
+  /* line 47, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+  button:hover {
+    border: 1px solid #F56400 !important;
+    color: #F56400 !important; }
+  /* line 51, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_core.scss */
+  button:focus {
+    outline: none !important; }
 
 /* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.detail-wrap {
+  background: white;
+  padding: 2%;
+  margin-top: 2%;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px; }
+
+/* line 8, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
 .add-to-cart {
   text-align: right; }
 
-/* line 4, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+/* line 11, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
 .img-detail-wrap {
-  height: 350px;
   overflow: hidden; }
 
+/* line 14, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.detail-description {
+  margin: 6% 0;
+  font-size: 18px;
+  line-height: 32px; }
+
+/* line 19, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.price, .add-to-cart {
+  margin: 5% 0; }
+
+/* line 22, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.price h5 {
+  font-size: 1.5em;
+  font-weight: 800; }
+
+/* line 26, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productDetail.scss */
+.materials {
+  display: inline;
+  padding-right: 10px; }
+
 /* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
-.productWrap {
+.product-wrap {
   margin: 3% 0;
   padding: 3%;
-  background: white; }
+  background: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px; }
+  /* line 7, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+  .product-wrap a {
+    color: gray;
+    transition: .2s all; }
+    /* line 10, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+    .product-wrap a:hover {
+      color: #0192B5;
+      text-decoration: none; }
 
-/* line 6, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+/* line 16, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
 .product {
   background-color: white;
   padding: 3% 5%; }
 
-/* line 10, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+/* line 20, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
 img {
   width: 100%; }
 
-/* line 13, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+/* line 23, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
 .img-wrap {
   overflow: hidden; }
+
+/* line 26, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.product-filter {
+  width: 20%;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 3%;
+  background: #fff;
+  box-shadow: inset 0px 1px 1px 1px #D4D4D4;
+  transition: .2s all;
+  text-align: left;
+  color: teal; }
+  /* line 37, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+  .product-filter:focus {
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border: 3px solid #0192B5;
+    box-shadow: none; }
+
+/* line 47, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.title-wrap h3 {
+  line-height: 36px; }
+
+/* line 50, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.options-wrap h5, .options-wrap button {
+  display: inline;
+  margin-right: 4%; }
+
+/* line 54, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_productListing.scss */
+.options-wrap h5 {
+  font-size: 1.5em;
+  font-weight: 800; }
+
+/* line 1, /Users/russpate/Documents/TIY/Assignments/angularShoppingCart/css/_shoppingCart.scss */
+.cart-info {
+  margin-top: 3%;
+  font-size: 1.5em; }
