@@ -2,7 +2,9 @@
   <div class="logo"><h1>Fetsy</h1></div>
   <div class="header-link"><a href="/#/shoppingCart">view cart</a>({{cartItems}})</div>
 </div>
-<div class="col-md-12 col-sm-12 productWrap" ng-repeat="product in products">
+<input type="text" placeholder="filter by name" ng-model="search">
+<input type="text" placeholder="filter by price" ng-model="search">
+<div class="col-md-12 col-sm-12 productWrap" ng-repeat="product in products | filter:search">
 
       <div class="title-wrap col-sm-9">
         <a href="/#/productDetail/{{product.listing_id}}">
